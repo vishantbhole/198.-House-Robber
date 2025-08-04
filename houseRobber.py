@@ -6,6 +6,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
+
+         # even = 0
+        # odd = 0
+        #
+        # for i, num in enumerate(nums):
+        #     if i % 2:
+        #         odd += num
+        #     else:
+        #         even += num
+        #
+        # return max(even,odd)
+
+        
         prev = 0
         prevnot = 0
 
@@ -13,6 +26,13 @@ class Solution(object):
             temp = max(prev, num + prevnot)
             prevnot = prev
             prev = temp
+
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [2,1,1,2]
+    print("maxArea is:", sol.rob(nums))
+
             
        
         return prev
