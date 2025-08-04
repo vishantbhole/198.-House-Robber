@@ -26,6 +26,7 @@ class Solution(object):
             temp = max(prev, num + prevnot)
             prevnot = prev
             prev = temp
+        return prev
 
 
 if __name__ == "__main__":
@@ -35,4 +36,4 @@ if __name__ == "__main__":
 
             
        
-        return prev
+        
