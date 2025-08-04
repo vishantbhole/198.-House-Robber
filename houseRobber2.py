@@ -14,3 +14,9 @@ class Solution(object):
             
        
         return rob2
+
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [2,1,1,2]
+    print("maxArea is:", sol.rob(nums))
