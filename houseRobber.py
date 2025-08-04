@@ -26,6 +26,13 @@ class Solution(object):
             temp = max(prev, num + prevnot)
             prevnot = prev
             prev = temp
+
+
+if __name__ == "__main__":
+    sol = Solution()
+    nums = [2,1,1,2]
+    print("maxArea is:", sol.rob(nums))
+
             
        
         return prev
